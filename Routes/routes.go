@@ -14,7 +14,7 @@ func Routes() {
 
 	// CORS Middleware configuration
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:4200"}, // Allow frontend's origin
+		AllowOrigins:     []string{"http://localhost:4200", "http://127.0.0.1"}, // Allow frontend's origin
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
