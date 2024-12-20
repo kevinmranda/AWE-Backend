@@ -206,28 +206,28 @@ func sendEmail(email, firstName, lastName string) {
 	// Set up email details
 	from := eml
 	to := []string{email}
-	subject := "Your ClickMaster Account is Ready!"
+	subject := "Your ethnicWear Account is Ready!"
 
 	// Email body template
 	body := fmt.Sprintf(`
 Hello %s %s,
 
-Thank you for creating an account at ClickMaster. Your account is now ready.
+Thank you for creating an account at ethnicWear. Your account is now ready.
 
-Should you have any questions about ClickMaster, visit our support page: https://support.clickmaster.com
+Should you have any questions about ethnicWear, visit our support page: https://support.ethnicWear.com
 
 Kind regards,
 
-Your ClickMaster Team
+Your ethnicWear Team
 
 ---
 
-ClickMaster Inc.
-www.clickmaster.com | support@clickmaster.com
-Managing Director: David Robert
+ethnicWear Inc.
+www.ethnicWear.com | support@ethnicWear.com
+Managing Director: Rose Jasper
 VAT-Number: DE294776378
 
-ClickMaster Inc., Kinondoni Mkwajuni, Dar es Salaam, Tanzania.
+ethnicWear Inc., DIT, Dar es Salaam, Tanzania.
 `, firstName, lastName)
 
 	// Create a byte slice for the email message
@@ -595,20 +595,20 @@ Hello %s %s,
 
 Click the link to reset your password: http://localhost:4200/resetPassword?token=%s
 
-Should you have any questions about ClickMaster, visit our support page: https://support.clickmaster.com
+Should you have any questions about ethnicWear, visit our support page: https://support.ethnicWear.com
 
 Kind regards,
 
-Your ClickMaster Team
+Your ethnicWear Team
 
 ---
 
-ClickMaster Inc.
-www.clickmaster.com | support@clickmaster.com
-Managing Director: David Robert
+ethnicWear Inc.
+www.ethnicWear.com | support@ethnicWear.com
+Managing Director: Rose Jasper
 VAT-Number: DE294776378
 
-ClickMaster Inc., Kinondoni Mkwajuni, Dar es Salaam, Tanzania.
+ethnicWear Inc., DIT, Dar es Salaam, Tanzania.
 `, firstName, lastName, tokenString)
 
 	// Create a byte slice for the email message
